@@ -24,6 +24,13 @@ function App() {
       <input type="search" name="input" id="" />
      </form>
 
+    {weather &&  <div>
+      <h2>{weather.name}</h2>
+      <div>
+        <h4>{Math.floor(Number(weather.main.temp))}°C</h4>
+      </div>
+      <p>{weather.weather[0].description}</p>
+  </div>}
      
     </div>
   );
